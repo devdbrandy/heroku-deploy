@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Harry Dbrandy <devdbrandy@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist/ && babel ./src -d dist",
+    "start": "babel-node ./src/server.js"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "morgan": "^1.8.2"
